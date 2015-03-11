@@ -2,15 +2,17 @@ package com.lesson;
 
 public class Humans {
 
-    public String name;
-    public int age;
+    private String name;
+    private int age;
 
     public int getAge() {
         return age;
     }
 
     public void setAge(int newAge) {
-        age = newAge;
+        if (newAge > 0 && newAge < 120) {
+            age = newAge;
+        }
     }
 
     public String getName() {
@@ -18,6 +20,8 @@ public class Humans {
     }
 
     public void setName(String newName) {
-        name = newName;
+        if (newName != null && newName.length() >= 2) {
+            name = newName;
+        }
     }
 }
