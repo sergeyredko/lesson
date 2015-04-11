@@ -25,5 +25,8 @@
         <module name="lesson" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lesson" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
